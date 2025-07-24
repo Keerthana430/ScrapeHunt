@@ -28,4 +28,4 @@ def scrape_posts(limit=1000):
         print("❌ Error while scraping:", e)
 
 if __name__ == "__main__":
-    scrape_posts(limit=10)
+    scrape_posts(limit=100)
