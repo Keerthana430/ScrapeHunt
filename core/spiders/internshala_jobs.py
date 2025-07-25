@@ -18,7 +18,7 @@ class InternshalaJobScraper(scrapy.Spider):
         'CONCURRENT_REQUESTS': 1,
         'RETRY_TIMES': 3,
         'FEEDS': {
-            'internshala_jobs.json': {
+            'outputs/internshala_jobs.json': {
                 'format': 'json',
                 'encoding': 'utf8',
                 'indent': 2,

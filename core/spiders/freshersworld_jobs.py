@@ -18,7 +18,7 @@ class FreshersworldJobScraper(scrapy.Spider):
         'CONCURRENT_REQUESTS': 1,
         'RETRY_TIMES': 3,
         'FEEDS': {
-            'freshersworld_jobs.json': {
+            'outputs/freshersworld_jobs.json': {
                 'format': 'json',
                 'encoding': 'utf8',
                 'indent': 2,

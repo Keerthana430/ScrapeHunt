@@ -218,11 +218,11 @@ def main():
     
     # Save and summarize
     if all_jobs:
-        scraper.save_jobs(all_jobs, 'scrapedTimes_jobs.json')
+        scraper.save_jobs(all_jobs, 'outputs/scrapedTimes_jobs.json')
         scraper.print_summary(all_jobs)
         
         print(f"\n🎉 Scraping completed!")
-        print(f"📁 Results saved in 'scrapedTimes_jobs.json'")
+        print(f"📁 Results saved in 'outputs/scrapedTimes_jobs.json'")
     else:
         print("\n❌ No jobs were scraped!")
 

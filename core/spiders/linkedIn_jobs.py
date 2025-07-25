@@ -425,7 +425,7 @@ def main():
         jobs = scraper.scrape_linkedin_jobs(QUERY, LOCATION, PAGES)
         
         if jobs:
-            scraper.save_jobs(jobs, 'linkedin_jobs.json')
+            scraper.save_jobs(jobs, 'outputs/linkedin_jobs.json')
             scraper.print_summary(jobs)
             print(f"\n🎉 LinkedIn scraping completed!")
             print(f"📁 Results saved in 'linkedin_jobs.json'")

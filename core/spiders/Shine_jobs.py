@@ -416,7 +416,7 @@ def main():
         total_time = time.time() - start_total
         
         if jobs:
-            scraper.save_jobs(jobs, 'shine_jobs.json')
+            scraper.save_jobs(jobs, 'outputs/shine_jobs.json')
             scraper.print_summary(jobs)
             print(f"\n🎉 Scraping completed in {total_time:.2f} seconds!")
             print(f"📁 Results saved in 'shine_jobs.json'")
