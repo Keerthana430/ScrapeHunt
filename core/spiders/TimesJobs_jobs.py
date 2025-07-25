@@ -152,18 +152,8 @@ class TimesJobsScraper:
     def save_jobs(self, jobs, filename):
         """Save jobs to JSON file"""
         try:
-            # Add summary
-            output_data = {
-                'summary': {
-                    'total_jobs': len(jobs),
-                    'scraped_at': datetime.now().isoformat(),
-                    'sources': list(set(job.get('source', 'Unknown') for job in jobs))
-                },
-                'jobs': jobs
-            }
-            
             with open(filename, 'w', encoding='utf-8') as f:
-                json.dump(output_data, f, indent=2, ensure_ascii=False)
+                json.dump(jobs, f, indent=2, ensure_ascii=False)
             
             print(f"✅ Saved {len(jobs)} jobs to {filename}")
             return True
